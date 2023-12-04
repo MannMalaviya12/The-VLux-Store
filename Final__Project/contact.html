@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header></header>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+
+
+<!-- Feedback Form -->
+<div class="feedback-section">
+    <h3>Feedback</h3>
+    <form class="feedback-form" onsubmit="showThankYou()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+    </section>
+
+    <footer></footer>
+
+    <script src="/JavaScript/include.js"></script>
+    <script src="/JavaScript/javascript.js"></script>
+    <script src="/JavaScript/feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+}
+
+h1{
+    font-family: 'Smooch', cursive;
+    color: #fff;
+    text-decoration: none;
+}
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000; /* Black header background */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* ... Your existing styles ... */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Trending Section Styles */
+#trending {
+    overflow-x:auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px; /* Add padding for better styling */
+    color: #000;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.scrolling-container {
+    font-size: 1rem; /* Restore font size for inner elements */
+}
+
+.product-container {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.image-container {
+    width: 400px; /* Increased image size to 400x400 */
+    height: 400px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+
+.shop-image-container {
+    overflow: hidden; /* Hide overflowing SVG */
+    height: 400px;
+    width: 400px;
+}
+
+
+.trending-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.image-container:hover .trending-image {
+    transform: scale(1.1);
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#new-arrivals,
+#layers {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+#new-arrivals h2,
+#layers h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #000; /* Black button background */
+    color: #fff; /* White button text color */
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+    border-radius: 15%;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+footer {
+    background-color: #000; /* Black footer background */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Shop Section Styles */
+#shop {
+    text-align: center;
+    position: relative;
+    padding: 40px 0; /* Adjust padding as needed */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#f8f8f8"><circle cx="50" cy="50" r="45" /></svg>') center/cover no-repeat;
+    background-color: #fff; /* Set a background color for the shop section */
+
+}
+
+.product-container {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shop-image-container {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.shop-image-container:hover .product-image {
+    transform: scale(1.1);
+}
+
+.login-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.login-body{
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Add a semi-transparent white background for better readability */
+}
+.page-login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.page-login-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.page-login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.page-login-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.page-login-form button:hover {
+    background-color: #45a049;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+/* Contact Us Section Styles */
+#contact-us {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Feedback Form Styles */
+.feedback-section {
+    margin-top: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.feedback-form label,
+.feedback-form textarea,
+.feedback-form button {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 30%; /* Use the full width of the container */
+    padding: 8px; /* Add some padding for better aesthetics */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.about-section {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 55px;
+}
+
+.about-section h2,
+.about-section p,
+.about-section ul {
+    margin-bottom: 15px;
+}
+
+/* Media Query for screens up to 600px (portrait phones) */
+@media (max-width: 600px) {
+    header {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 5px; /* Reduce margin for smaller screens */
+    }
+
+    .product-container {
+        margin-right: 5px;
+    }
+
+    .image-container {
+        width: 100%; /* Full width for smaller screens */
+        height: 200px; /* Adjust height as needed */
+    }
+
+    .shop-image-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .trending-image,
+    .product-image {
+        object-fit: contain; /* Adjust object-fit for smaller screens */
+    }
+
+    #shop {
+        padding: 20px 5px; /* Adjust padding for smaller screens */
+    }
+
+    .button-container {
+        margin-top: 5px;
+    }
+
+    #new-arrivals,
+    #layers {
+        margin-bottom: 10px;
+    }
+
+    #new-arrivals h2,
+    #layers h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media Query for screens between 601px and 900px (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .product-container {
+        margin-right: 10px;
+    }
+}
+
+/* Media Query for screens between 901px and 1200px (small laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .product-container {
+        margin-right: 15px;
+    }
+}
+
+/* Media Query for screens larger than 1200px (standard laptops and desktops) */
+@media (min-width: 1201px) {
+    .product-container {
+        margin-right: 20px;
+    }
+}
