@@ -33,11 +33,31 @@ h1{
 }
 header {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #000; /* Black header background */
+    background-color: #000;
     color: #fff;
-    padding: 50px;
+    padding: 20px; /* Reduce padding for a cleaner look */
     text-align: center;
+    position: relative;
 }
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust the distance from the right */
+    transform: translateY(-50%);
+    width: 20%;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 14px;
+}
+
 
 nav ul {
     list-style: none;
