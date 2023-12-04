@@ -438,3 +438,13 @@ button:hover {
         margin-right: 20px;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 10px;
+    }
+
+    .search-bar {
+        display: none; /* Hide the search bar for smaller screens */
+    }
+}
