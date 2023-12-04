@@ -29,6 +29,7 @@ h1{
     font-family: 'Smooch', cursive;
     color: #fff;
     text-decoration: none;
+    letter-spacing: 5px;
 }
 header {
     font-family: 'Times New Roman', Times, serif;
@@ -52,6 +53,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     position: relative;
+    letter-spacing: 2px;
 }
 
 nav a::after {
